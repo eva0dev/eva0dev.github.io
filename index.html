@@ -108,7 +108,13 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
-
+.custom-rounded-img {
+        border-radius: 50%; /* Fully rounded for a circle */
+        width: 30px; /* Set the width you need */
+        height: 30px; /* Set the height you need */
+        background-size: cover; /* Ensures the image covers the div */
+        background-position: center; /* Centers the background image */
+    }
 
 </style>
 
@@ -141,7 +147,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Photo.jpg);">
+	          	<div class="one-third js-fullheight order-md-last img custom-rounded-img" style="background-image:url(images/Photo_01.jpg); height: 50px;">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
